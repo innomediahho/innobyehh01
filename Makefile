@@ -1,4 +1,4 @@
-TARGET := byeworld
+TARGET := innobye
 
 all: $(TARGET)
 
