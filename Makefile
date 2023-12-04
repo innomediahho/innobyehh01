@@ -2,10 +2,12 @@ TARGET := innobye
 
 all: $(TARGET)
 
-$(TARGET): $(BYE_OBJ)
+OBJECTS = bye.o
+
+$(TARGET): $(OBJECTS)
 	$(CC) $(CFLAGS) $(LDFLAGS) $^ -o $@ -Wl,--hash-style=gnu
 
-$(BYE_OBJ): bye.c
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 install:
