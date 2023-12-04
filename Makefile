@@ -12,7 +12,7 @@ $(TARGET): $(OBJECTS)
 
 install:
 	install -d ${DESTDIR}${BINDIR}
-	install -m 0755 ${TARGET} ${DESTDIR}${BINDIR}
+	install -m 0755 $(TARGET) ${DESTDIR}${BINDIR}
 
 clean:
 	rm -f $(OBJECTS) $(TARGET)
