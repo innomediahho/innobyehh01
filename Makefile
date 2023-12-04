@@ -15,4 +15,4 @@ install:
 	install -m 0755 ${TARGET} ${DESTDIR}${BINDIR}
 
 clean:
-	rm -f $(BYE_OBJ) $(TARGET)
+	rm -f $(OBJECTS) $(TARGET)
