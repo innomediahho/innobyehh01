@@ -5,7 +5,7 @@ all: $(TARGET)
 $(TARGET): $(BYE_OBJ)
 	$(CC) $(CFLAGS) $(LDFLAGS) $^ -o $@ -Wl,--hash-style=gnu
 
-$(BYE_OBJ): $(BYE_SRC)
+$(BYE_OBJ): bye.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 install:
